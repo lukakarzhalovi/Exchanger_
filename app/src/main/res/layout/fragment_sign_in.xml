@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".sign_in"
-    android:background="#354259">
+    android:background="@drawable/main">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="welcome"
-        android:textSize="60dp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#000000"/>
+        android:textColor="#6740AE"
+        android:fontFamily="@font/custom"/>
 
 
     <LinearLayout
@@ -24,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="14dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +40,8 @@
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:text=""
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:fontFamily="@font/custom"/>
 
         <EditText
             android:id="@+id/password"
@@ -49,7 +51,8 @@
             android:hint="Password"
             android:inputType="textPersonName"
             android:text=""
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:fontFamily="@font/custom"/>
 
         <Button
             android:id="@+id/sign_in"
@@ -57,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="შესვლა"
-            android:backgroundTint="#CDC2AE"/>
+            android:backgroundTint="#94B49F"/>
     </LinearLayout>
 
     <LinearLayout
@@ -76,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="რეგისტრაცია"
-            android:backgroundTint="#CDC2AE"/>
+            android:backgroundTint="#94B49F"/>
 
         <Button
             android:id="@+id/resetpassword"
@@ -84,6 +87,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="პაროლის აღდგენა"
-            android:backgroundTint="#CDC2AE"/>
+            android:backgroundTint="#94B49F"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

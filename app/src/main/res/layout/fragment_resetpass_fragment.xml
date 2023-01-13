@@ -4,10 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".resetpass_fragment">
+    tools:context=".resetpass_fragment"
+    android:background="@drawable/main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:fontFamily="@font/custom"/>
 
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
@@ -23,29 +37,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Email"
             android:inputType="textPersonName"
-            android:text="email" />
+            android:text=""
+            android:fontFamily="@font/custom"/>
 
-        <EditText
-            android:id="@+id/new_pass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="ახალი პაროლი" />
-
-        <EditText
-            android:id="@+id/new_pass1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="გაიმეორეთ ახალი პაროლი" />
 
         <Button
             android:id="@+id/changepass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="შეცვლა" />
+            android:text="შეცვლა"
+            android:backgroundTint="#94B49F"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
